@@ -1,0 +1,209 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+  .back-button .back-img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #27e2cc;
+    outline: 8px solid white;
+    box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
+
+.header {
+  background-color: #27e2cc;
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .header .home {
+    position: absolute;
+    left: 20px; }
+    .header .home img {
+      height: 25px;
+      width: 25px; }
+  .header .title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px; }
+
+.filler {
+  height: 80px; }
+
+.section {
+  height: calc(100vh - 80px); }
+
+.dashboard .dashquest {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px; }
+.dashboard .dashboard-firststeps {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #27e2cc;
+  color: white;
+  height: calc(100% - 80px); }
+  .dashboard .dashboard-firststeps .firststeps {
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px; }
+  .dashboard .dashboard-firststeps ol {
+    margin-top: 0; }
+    .dashboard .dashboard-firststeps ol li {
+      margin-bottom: 5px;
+      list-style-type: none;
+      font-size: 15px; }
+  .dashboard .dashboard-firststeps a {
+    height: 62px;
+    background-color: white;
+    border: none;
+    margin: 0 10%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #27e2cc;
+    outline: 8px solid white;
+    box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
+  .dashboard .dashboard-firststeps a:last-child {
+    margin-top: 25px; }
+
+.callornot {
+  display: flex;
+  flex-direction: column; }
+  .callornot .choosetype {
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 5%; }
+  .callornot .img {
+    height: 100px;
+    display: block;
+    background-color: aqua;
+    margin: 30px 5% 10px 5%; }
+  .callornot .forest-animals {
+    border: 1px solid #93278f; }
+  .callornot .home-animals {
+    border: 1px solid #ff7bac; }
+  .callornot .forest-animals, .callornot .home-animals {
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: none;
+    margin: 0 10%;
+    outline: 8px solid white;
+    box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
+
+.iamcalling {
+  display: flex;
+  flex-direction: column;
+  justify-content: start; }
+  .iamcalling .helpnumbers {
+    padding-top: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 17px; }
+  .iamcalling .helpnumbers2 {
+    margin: 0 auto;
+    font-size: 15px;
+    padding-bottom: 20px; }
+  .iamcalling .circle {
+    display: flex;
+    margin: 0 auto;
+    height: 110px;
+    width: 110px;
+    color: white;
+    border-radius: 50%;
+    background-color: #27e2cc;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border: 1px solid #27e2cc;
+    outline: 8px solid white;
+    box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
+  .iamcalling .telNumber {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center; }
+  .iamcalling .telNumber:before {
+    content: "";
+    display: block;
+    width: 90vw;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    margin: 15px 0; }
+  .iamcalling .telPlace {
+    color: #27e2cc;
+    margin: 0 auto; }
+
+.iamhelping {
+  margin: 0 20px; }
+  .iamhelping .helping-lesne {
+    padding-top: 20px;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .iamhelping .helping-lesne .img-icon {
+      display: block;
+      width: 116px;
+      height: 116px;
+      background-color: aqua; }
+  .iamhelping .helping-domowe {
+    padding-top: 20px;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .iamhelping .helping-domowe .img-icon {
+      display: block;
+      width: 116px;
+      height: 116px;
+      background-color: red; }
+  .iamhelping .modal {
+    display: none;
+    position: fixed;
+    background: white;
+    border: 1px solid grey;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px; }
+    .iamhelping .modal .close-modal {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 15px;
+      top: 15px; }
+    .iamhelping .modal .modal-icon {
+      position: absolute;
+      height: 116px;
+      width: 116px;
+      margin-left: -58px;
+      left: 50%; }
+    .iamhelping .modal .modal-text {
+      position: absolute;
+      top: 200px;
+      padding: 0 15px; }
+
+/*# sourceMappingURL=styles.css.map */

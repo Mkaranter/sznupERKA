@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <!--script src="smoothscroll.js"></script-->
+    </head>
+<body>
+    <header class="header">
+        <a href="#homepage" class="home"><img src="img/lapa.png"></a>
+        <span class="title">sznuperka</span>
+    </header>
+    <div class="filler" id="homepage"></div>
+    <section class="dashboard section">
+        <div class="dashquest">
+        <span class="help1">Znalazłeś potrzebujące zwierzę i nie wiesz co zrobić?</span>
+        <br>
+        <span class="help2">Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić</span>
+        </div>
+        <div class="dashboard-firststeps">
+            <span class="firststeps">Pierwsze kroki</span>
+            <ol>
+                <li>1. Sprawdź czy zwierzę oddycha</li>
+                <li>2. Sprawdź czy jest oznakowane</li>
+                <li>3. Sprawdź czy w pobliżu nie ma gniazda</li>
+                <li>4. Sprawdź czy jest ranne</li>
+            </ol>
+            <a href="#callnot" id="iwantcall">Chce zadzwonić</a>
+            <a href="#callnot" id="iwanthelp">Chce sam udzielić pomocy</a>
+        </div>
+    </section>
+    <div class="filler" id="callnot"></div>
+    <section class="callornot section" >
+        <span class="choosetype">Dokonaj wyboru jaki typ zwierzęcia znalazłeś</span>
+        <img src="img/zw_lesne-01-01.png" class="img">
+        <a id="frst" class="forest-animals">zwierzęta leśne</a>
+        <img src="img/zw_domowe-01-01-01.png" class="img">
+        <a id="home" class="home-animals" >zwierzęta domowe</a>
+        <a href="#homepage" class="back-button"><img class="back-img" src="img/przycisk.png"></a>
+    </section>
+    <div class="filler" id="iamcalling"></div>
+    <section class="iamcalling section">
+        <span class="helpnumbers">Ratunkowe numery telefonu</span>
+        <span class="helpnumbers2">w twojej</span>
+        <span class="circle">112</span>
+        <span class="telNumber" id="number1"></span>
+        <span class="telPlace" id="place1"></span>
+        <span class="telNumber" id="number2"></span>
+        <span class="telPlace" id="place2"></span>
+        <span class="telNumber" id="number3"></span>
+        <span class="telPlace" id="place3"></span>
+        <span class="telNumber" id="number4">997</span>
+        <span class="telPlace" id="place4">Policja</span>
+        <a href="#callnot" class="back-button"><img class="back-img" src="img/przycisk.png"></a>
+    </section>
+    <div class="filler" id="iamhelping"></div>
+    <section class="iamhelping section" >
+        <div id="helping-lesne" class="helping-lesne">
+            <img src="img/dzik-01.png" class="img-icon dzik-icon">
+            <img src="img/jez-01.png" class="img-icon jez-icon">
+            <img src="img/zajac-01.png" class="img-icon zajac-icon">
+            <img src="img/deer-01.png" class="img-icon deer-icon">
+            <img src="img/sowa-01.png" class="img-icon sowa-icon">
+            <img src="img/wiewiorka-01.png" class="img-icon wiew-icon">
+            <img src="img/lis-01-01.png" class="img-icon lis-icon">
+            <a href="#iamcallin"><img src="img/inne-01-01.png" class="img-icon inne-icon"></a>
+        </div>
+        <div id="helping-domowe" class="helping-domowe">
+            <img src="img/chomik-01.png" class="img-icon chomik-icon">
+            <img src="img/kot-01.png" class="img-icon kot-icon">
+            <img src="img/papuga-01.png" class="img-icon papuga-icon">
+            <img src="img/pies-01.png" class="img-icon pies-icon">
+            <img src="img/krolik-01.png" class="img-icon krolik-icon">
+            <img src="img/mouse-01.png" class="img-icon mouse-icon">
+            <img src="img/zolw-01-01.png" class="img-icon zolw-icon">
+            <img src="img/inne-01-01.png" class="img-icon inne-icon-dom">
+        </div>
+        <div id="modal" class="modal">
+            <img src="img/close.png" id="close-modal" class="close-modal">
+            <img id="modal-icon" class="modal-icon">
+            <p class="modal-text">orem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        </div>
+    <a href="#callnot" class="back-button"><img class="back-img" src="img/przycisk.png"></a>
+    </section>
+<script src="getcontact.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
