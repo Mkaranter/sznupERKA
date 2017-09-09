@@ -208,6 +208,14 @@ a {
       display: flex;
       justify-content: center;
       font-size: 24px; }
+    .iamhelping .modal span:after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      background-color: black;
+      right: 30px;
+      top: 35px; }
     .iamhelping .modal ul {
       padding-left: 0; }
 
