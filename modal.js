@@ -70,6 +70,7 @@ $(".papuga-icon").click(()=> {
 $(".pies-icon").click(()=> {
     $("#modal").show();
     $('#modal-icon').attr("src", "img/pies-01.png")
+    $('#modal-text').txt("")
 })
 
 $(".krolik-icon").click(()=> {
