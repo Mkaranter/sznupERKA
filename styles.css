@@ -36,9 +36,7 @@ a {
       height: 25px;
       width: 25px; }
   .header .title {
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px; }
+    height: 30px; }
 
 .filler {
   height: 80px; }
