@@ -47,7 +47,8 @@ a {
 .dashboard .dashquest {
   font-size: 17px;
   font-weight: bold;
-  padding: 20px; }
+  padding: 20px;
+  line-height: 140%; }
 .dashboard .dashboard-firststeps {
   display: flex;
   flex-direction: column;
@@ -59,9 +60,10 @@ a {
     margin: 10px auto;
     font-size: 17px;
     font-weight: bold;
-    padding: 20px; }
+    padding: 20px 20px 5px 20px; }
   .dashboard .dashboard-firststeps ol {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 20px; }
     .dashboard .dashboard-firststeps ol li {
       margin-bottom: 5px;
       list-style-type: none;
@@ -75,7 +77,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #27e2cc;
+    border: 2px solid #27e2cc;
     outline: 8px solid white;
     box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
   .dashboard .dashboard-firststeps a:last-child {
@@ -95,9 +97,9 @@ a {
     background-color: aqua;
     margin: 30px 5% 10px 5%; }
   .callornot .forest-animals {
-    border: 1px solid #93278f; }
+    border: 2px solid #93278f; }
   .callornot .home-animals {
-    border: 1px solid #ff7bac; }
+    border: 2px solid #ff7bac; }
   .callornot .forest-animals, .callornot .home-animals {
     height: 62px;
     display: flex;
@@ -133,8 +135,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    border: 1px solid #27e2cc;
-    outline: 8px solid white;
+    border: 2px solid #27e2cc;
     box-shadow: 6px 9px 33px -11px rgba(0, 0, 0, 0.29); }
   .iamcalling .telNumber {
     margin: 0 auto;
@@ -211,10 +212,11 @@ a {
       position: absolute;
       width: 80%;
       height: 1px;
-      background-color: black;
+      background-color: #ff7bac;
       right: 30px;
-      top: 35px; }
+      top: 45px; }
     .iamhelping .modal ul {
-      padding-left: 0; }
+      padding-left: 0;
+      padding-top: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
