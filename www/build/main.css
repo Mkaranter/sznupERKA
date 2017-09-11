@@ -25208,3 +25208,8 @@ page-home .par2 {
   background: green;
   height: 70%;
 }
+
+page-home .list-header {
+  text-align: center;
+  font-size: 17px;
+}

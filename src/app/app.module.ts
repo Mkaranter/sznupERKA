@@ -40,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    AnimalService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

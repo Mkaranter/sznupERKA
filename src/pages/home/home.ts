@@ -10,17 +10,19 @@ import { AnimalTypeChoicePage } from '../animal-type-choice/animal-type-choice';
 })
 export class HomePage {
   
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, private AnimalService: AnimalService) {
+    console.log(this.AnimalService.action)
   }
 
 call() {
-  AnimalService.prototype.action = "call"
+  //AnimalService.prototype.action = "call"
+  this.AnimalService.action = "call" //TO JEST MORDO!!
+  console.log(this.AnimalService.action)
   this.navCtrl.push(AnimalTypeChoicePage)
 }
 
 help() {
-  AnimalService.prototype.action = "help"
+  this.AnimalService.action = "help"
   this.navCtrl.push(AnimalTypeChoicePage)
 }
 

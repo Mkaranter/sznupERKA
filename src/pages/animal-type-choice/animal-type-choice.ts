@@ -16,15 +16,11 @@ import { AnimalService } from '/Users/michalkaranter/GitHub/sznupERKA/src/app/an
 })
 export class AnimalTypeChoicePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AnimalTypeChoicePage');
+  constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService) {
   }
 
   forest() {
-      if (AnimalService.prototype.action == "call") {
+      if (this.AnimalService.action == "call") {
         console.log("forest call")
       }  else {
         console.log("forest help")
@@ -33,7 +29,7 @@ export class AnimalTypeChoicePage {
   }
 
   home() {
-    if (AnimalService.prototype.action == "call") {
+     if (this.AnimalService.action == "call") {
       console.log("home call")
     }  else {
       console.log("home help")
