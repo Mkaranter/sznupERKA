@@ -25198,3 +25198,13 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+page-home .par1 {
+  background-color: tomato;
+  height: 30%;
+}
+
+page-home .par2 {
+  background: green;
+  height: 70%;
+}

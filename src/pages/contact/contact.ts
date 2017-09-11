@@ -8,7 +8,11 @@ import { NavController } from 'ionic-angular';
 export class ContactPage {
 
   constructor(public navCtrl: NavController) {
+  }
 
+  nara() {
+    console.log("nara mordy")
+    this.navCtrl.pop()
   }
 
 }
