@@ -11,7 +11,6 @@ import { AnimalTypeChoicePage } from '../animal-type-choice/animal-type-choice';
 export class HomePage {
   
   constructor(public navCtrl: NavController, private AnimalService: AnimalService) {
-    console.log(this.AnimalService.action)
   }
 
 call() {
