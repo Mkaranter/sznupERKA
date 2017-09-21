@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
-import { AnimalService } from '/Users/michalkaranter/GitHub/sznupERKA/src/app/animal.service'
 import { AnimalTypeChoicePage } from '../animal-type-choice/animal-type-choice';
+import { AppService } from '../../app/app.service';
 
 @Component({
   selector: 'page-home',
@@ -10,18 +10,16 @@ import { AnimalTypeChoicePage } from '../animal-type-choice/animal-type-choice';
 })
 export class HomePage {
   
-  constructor(public navCtrl: NavController, private AnimalService: AnimalService) {
+  constructor(public navCtrl: NavController, private AppService: AppService) {
   }
 
 call() {
-  //AnimalService.prototype.action = "call"
-  this.AnimalService.action = "call" //TO JEST MORDO!!
-  console.log(this.AnimalService.action)
+  this.AppService.action = "call" //TO JEST MORDO!!
   this.navCtrl.push(AnimalTypeChoicePage)
 }
 
 help() {
-  this.AnimalService.action = "help"
+  this.AppService.action = "help"
   this.navCtrl.push(AnimalTypeChoicePage)
 }
 
