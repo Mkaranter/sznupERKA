@@ -24,7 +24,7 @@
       </ion-list>
       <ul>        
           <li *ngFor="let animal of animals">
-            {{animal.id}} {{animal.desc}}
+            <span *ngIf="animal.type == 'home'">{{animal.id}} {{animal.desc}}</span>
           </li>
       </ul>
 

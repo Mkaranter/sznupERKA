@@ -360,7 +360,7 @@ var HelpForestPage = (function () {
 HelpForestPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-help-forest',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/'<!--\n  Generated template for the HelpForestPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>help-forest</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n          <ion-thumbnail item-start>\n            <img src="img/thumbnail-totoro.png" alt="thmub">\n          </ion-thumbnail>\n          <h2>My Neighbor Totoro</h2>\n          <p>Hayao Miyazaki • 1988</p>\n          <button ion-button clear item-end>View</button>\n        </ion-item>\n      </ion-list>\n      <ul>        \n          <li *ngFor="let animal of animals">\n            {{animal.id}} {{animal.desc}}\n          </li>\n      </ul>\n\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/,
+        selector: 'page-help-forest',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/'<!--\n  Generated template for the HelpForestPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>help-forest</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n          <ion-thumbnail item-start>\n            <img src="img/thumbnail-totoro.png" alt="thmub">\n          </ion-thumbnail>\n          <h2>My Neighbor Totoro</h2>\n          <p>Hayao Miyazaki • 1988</p>\n          <button ion-button clear item-end>View</button>\n        </ion-item>\n      </ion-list>\n      <ul>        \n          <li *ngFor="let animal of animals">\n            <span *ngIf="animal.type == \'home\'">{{animal.id}} {{animal.desc}}</span>\n          </li>\n      </ul>\n\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/,
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_animal_service__["a" /* AnimalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_animal_service__["a" /* AnimalService */]) === "function" && _c || Object])
 ], HelpForestPage);
@@ -406,6 +406,8 @@ var ANIMALS = [
     { id: 2, type: "forest", desc: "jestem dzik", thumb: "" },
     { id: 3, type: "forest", desc: "jestem zajac", thumb: "" },
     { id: 4, type: "forest", desc: "jestem list", thumb: "" },
+    { id: 5, type: "home", desc: "jestem kot", thumb: "" },
+    { id: 6, type: "home", desc: "jestem pies", thumb: "" },
 ];
 //# sourceMappingURL=list-animals.js.map
 
