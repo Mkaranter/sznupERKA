@@ -1,23 +1,21 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>sznupERKA</ion-title>
+    <ion-title class="header">sznupERKA</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <div>
-      <span>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</span>
-      <span>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</span>
-    </div>
-    <ion-list>
-      <ion-list-header no-lines class="list-header">Pierwsze kroki</ion-list-header>
+    <h2>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</h2>
+    <h2>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</h2>
+    <ion-list class="check-list">
+      <ion-list-header no-lines class="check-list-header">Pierwsze kroki</ion-list-header>
       <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>
       <ion-item>2. Sprawdź czy jest oznakowane</ion-item>
       <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>
       <ion-item>4. Sprawdz czy jest ranne</ion-item>
     </ion-list>
-  <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>
-  <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>
+    <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>
+    <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>
 </ion-content>
 
 

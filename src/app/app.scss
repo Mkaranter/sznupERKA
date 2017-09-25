@@ -14,3 +14,15 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+//COLORS
+$main-color: #27e2cc;
+
+.toolbar-background {
+    background-color: $main-color;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}

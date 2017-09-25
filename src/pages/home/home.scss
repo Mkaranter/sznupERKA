@@ -1,18 +1,12 @@
 page-home {
-    .par1 {
-        background-color: tomato;
-        height: 30%;
-
-    }
-
-    .par2 {
-        background: green;
-        height: 70%;
-
-    }
-
-    .list-header {
-        text-align: center;
-        font-size: 17px;
-    }
+    .check-list {
+        background-color: $main-color;
+       .chec-list-header {
+            text-align: center;
+            font-size: 17px;
+       }
+       .item {
+           background-color: inherit;
+       }
+}
 }

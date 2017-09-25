@@ -13,10 +13,10 @@ import { AppService } from '../../app/app.service';
 
 @IonicPage()
 @Component({
-  selector: 'page-help-forest',
-  templateUrl: 'help-forest.html',
+  selector: 'page-help-action',
+  templateUrl: 'help-action.html',
 })
-export class HelpForestPage implements OnInit{
+export class HelpActionPage implements OnInit{
   animals: Animal[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService, private AppService: AppService) {
@@ -24,7 +24,7 @@ export class HelpForestPage implements OnInit{
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HelpForestPage');
+    console.log('ionViewDidLoad HelpActionPage');
   }
 
   getAnimals(): void {

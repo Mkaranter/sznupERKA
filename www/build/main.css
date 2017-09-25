@@ -25199,17 +25199,24 @@ ion-navbar.toolbar {
   }
 }
 
-page-home .par1 {
-  background-color: tomato;
-  height: 30%;
+.toolbar-background {
+  background-color: #27e2cc;
 }
 
-page-home .par2 {
-  background: green;
-  height: 70%;
+h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-page-home .list-header {
+page-home .check-list {
+  background-color: #27e2cc;
+}
+
+page-home .check-list .chec-list-header {
   text-align: center;
   font-size: 17px;
+}
+
+page-home .check-list .item {
+  background-color: inherit;
 }

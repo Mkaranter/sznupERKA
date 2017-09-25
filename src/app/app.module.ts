@@ -9,7 +9,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { AnimalTypeChoicePage } from '../pages/animal-type-choice/animal-type-choice';
-import { HelpForestPage } from '../pages/help-forest/help-forest';
+import { HelpActionPage } from '../pages/help-action/help-action';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     AnimalTypeChoicePage,
-    HelpForestPage
+    HelpActionPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     AnimalTypeChoicePage,
-    HelpForestPage,
+    HelpActionPage,
   ],
   providers: [
     StatusBar,

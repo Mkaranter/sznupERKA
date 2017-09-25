@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HelpForestPage } from '../help-forest/help-forest';
+import { HelpActionPage } from '../help-action/help-action';
 import { AppService } from '../../app/app.service';
 
 /**
@@ -26,7 +26,7 @@ export class AnimalTypeChoicePage {
       if (this.AnimalService.action == "call") {
         console.log("forest call")  
       }  else {
-        this.navCtrl.push(HelpForestPage)
+        this.navCtrl.push(HelpActionPage)
       }
 
   }
@@ -36,7 +36,7 @@ export class AnimalTypeChoicePage {
      if (this.AnimalService.action == "call") {
       console.log("home call")
     }  else {
-      this.navCtrl.push(HelpForestPage)
+      this.navCtrl.push(HelpActionPage)
     }
 
   }

@@ -7,7 +7,7 @@ webpackJsonp([2],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimalTypeChoicePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__help_forest_help_forest__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__help_action_help_action__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_service__ = __webpack_require__(76);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -41,7 +41,7 @@ var AnimalTypeChoicePage = (function () {
             console.log("forest call");
         }
         else {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_forest_help_forest__["a" /* HelpForestPage */]);
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_action_help_action__["a" /* HelpActionPage */]);
         }
     };
     AnimalTypeChoicePage.prototype.home = function () {
@@ -50,7 +50,7 @@ var AnimalTypeChoicePage = (function () {
             console.log("home call");
         }
         else {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_forest_help_forest__["a" /* HelpForestPage */]);
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_action_help_action__["a" /* HelpActionPage */]);
         }
     };
     return AnimalTypeChoicePage;
@@ -58,12 +58,11 @@ var AnimalTypeChoicePage = (function () {
 AnimalTypeChoicePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-animal-type-choice',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/'<!--\n  Generated template for the AnimalTypeChoicePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AnimalTypeChoice</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <button ion-button color="dark" (click)="forest()">Zwierzęta Leśne</button>\n    <button ion-button color="dark" (click)="home()">Zwierzęta Domowe</button>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/,
+        selector: 'page-animal-type-choice',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/'<!--\n  Generated template for the AnimalTypeChoicePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AnimalTypeChoice</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h2>elooooo</h2>\n    <button ion-button color="dark" (click)="forest()">Zwierzęta Leśne</button>\n    <button ion-button color="dark" (click)="home()">Zwierzęta Domowe</button>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]])
 ], AnimalTypeChoicePage);
 
-var _a, _b, _c;
 //# sourceMappingURL=animal-type-choice.js.map
 
 /***/ }),
@@ -91,11 +90,15 @@ webpackEmptyAsyncContext.id = 109;
 var map = {
 	"../pages/animal-type-choice/animal-type-choice.module": [
 		269,
-		1
+		6
+	],
+	"../pages/help-action/help-action.module": [
+		271,
+		5
 	],
 	"../pages/help-forest/help-forest.module": [
 		268,
-		0
+		4
 	]
 };
 function webpackAsyncContext(req) {
@@ -184,7 +187,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>sznupERKA</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <div>\n      <span>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</span>\n      <span>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</span>\n    </div>\n    <ion-list>\n      <ion-list-header no-lines class="list-header">Pierwsze kroki</ion-list-header>\n      <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>\n      <ion-item>2. Sprawdź czy jest oznakowane</ion-item>\n      <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>\n      <ion-item>4. Sprawdz czy jest ranne</ion-item>\n    </ion-list>\n  <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>\n  <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header">sznupERKA</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</h2>\n    <h2>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</h2>\n    <ion-list class="check-list">\n      <ion-list-header no-lines class="check-list-header">Pierwsze kroki</ion-list-header>\n      <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>\n      <ion-item>2. Sprawdź czy jest oznakowane</ion-item>\n      <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>\n      <ion-item>4. Sprawdz czy jest ranne</ion-item>\n    </ion-list>\n    <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>\n    <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]])
 ], HomePage);
@@ -222,7 +225,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_animal_type_choice_animal_type_choice__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_help_forest_help_forest__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_help_action_help_action__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -257,14 +260,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_animal_type_choice_animal_type_choice__["a" /* AnimalTypeChoicePage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_help_forest_help_forest__["a" /* HelpForestPage */]
+            __WEBPACK_IMPORTED_MODULE_10__pages_help_action_help_action__["a" /* HelpActionPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/help-forest/help-forest.module#HelpForestPageModule', name: 'HelpForestPage', segment: 'help-forest', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/animal-type-choice/animal-type-choice.module#AnimalTypeChoicePageModule', name: 'AnimalTypeChoicePage', segment: 'animal-type-choice', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/animal-type-choice/animal-type-choice.module#AnimalTypeChoicePageModule', name: 'AnimalTypeChoicePage', segment: 'animal-type-choice', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/help-action/help-forest.module#HelpForestPageModule', name: 'HelpForestPage', segment: 'help-forest', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/help-action/help-action.module#HelpActionPageModule', name: 'HelpActionPage', segment: 'help-action', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -277,7 +282,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_animal_type_choice_animal_type_choice__["a" /* AnimalTypeChoicePage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_help_forest_help_forest__["a" /* HelpForestPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_help_action_help_action__["a" /* HelpActionPage */],
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__["a" /* StatusBar */],
@@ -429,37 +434,11 @@ ContactPage = __decorate([
 
 /***/ }),
 
-/***/ 76:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var AppService = (function () {
-    function AppService() {
-    }
-    return AppService;
-}());
-AppService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
-], AppService);
-
-//# sourceMappingURL=app.service.js.map
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpForestPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpActionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_animal_service__ = __webpack_require__(151);
@@ -483,36 +462,61 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var HelpForestPage = (function () {
-    function HelpForestPage(navCtrl, navParams, AnimalService, AppService) {
+var HelpActionPage = (function () {
+    function HelpActionPage(navCtrl, navParams, AnimalService, AppService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.AnimalService = AnimalService;
         this.AppService = AppService;
         console.log(this.AppService.type);
     }
-    HelpForestPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HelpForestPage');
+    HelpActionPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HelpActionPage');
     };
-    HelpForestPage.prototype.getAnimals = function () {
+    HelpActionPage.prototype.getAnimals = function () {
         var _this = this;
         this.AnimalService.getAnimals().then(function (animals) { return _this.animals = animals; });
     };
-    HelpForestPage.prototype.ngOnInit = function () {
+    HelpActionPage.prototype.ngOnInit = function () {
         this.getAnimals();
     };
-    return HelpForestPage;
+    return HelpActionPage;
 }());
-HelpForestPage = __decorate([
+HelpActionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-help-forest',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/'<!--\n  Generated template for the HelpForestPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>help-forest</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list *ngFor="let animal of animals">\n        <ion-item *ngIf="animal.type == AppService.type">\n          <ion-thumbnail item-start>\n            <img src="img/thumbnail-totoro.png" alt="thmub">\n          </ion-thumbnail>\n          <h2>{{animal.id}}</h2>\n          <p>{{animal.type}} {{animal.desc}}</p>\n          <button ion-button clear item-end>View</button>\n        </ion-item>\n      </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-forest/help-forest.html"*/,
+        selector: 'page-help-action',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-action/help-action.html"*/'<!--\n  Generated template for the HelpForestPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>help-action</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n    <ion-list *ngFor="let animal of animals">\n        <ion-item *ngIf="animal.type == AppService.type">\n          <ion-thumbnail item-start>\n            <img src="img/thumbnail-totoro.png" alt="thmub">\n          </ion-thumbnail>\n          <h2>{{animal.id}}</h2>\n          <p>{{animal.type}} {{animal.desc}}</p>\n          <button ion-button clear item-end>View</button>\n        </ion-item>\n      </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/help-action/help-action.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_animal_service__["a" /* AnimalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_animal_service__["a" /* AnimalService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]) === "function" && _d || Object])
-], HelpForestPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__app_animal_service__["a" /* AnimalService */], __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]])
+], HelpActionPage);
 
-var _a, _b, _c, _d;
-//# sourceMappingURL=help-forest.js.map
+//# sourceMappingURL=help-action.js.map
+
+/***/ }),
+
+/***/ 76:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppService = (function () {
+    function AppService() {
+    }
+    return AppService;
+}());
+AppService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+], AppService);
+
+//# sourceMappingURL=app.service.js.map
 
 /***/ })
 
