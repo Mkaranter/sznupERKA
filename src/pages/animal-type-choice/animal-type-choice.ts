@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AppService } from '/Users/michalkaranter/GitHub/sznupERKA/src/app/app.service'
 import { HelpForestPage } from '../help-forest/help-forest';
+import { AppService } from '../../app/app.service';
 
 /**
  * Generated class for the AnimalTypeChoicePage page.
@@ -18,11 +18,13 @@ import { HelpForestPage } from '../help-forest/help-forest';
 export class AnimalTypeChoicePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AppService) {
+    this.AnimalService.type = ""
   }
 
   forest() {
+      this.AnimalService.type = "forest"
       if (this.AnimalService.action == "call") {
-        console.log("forest call")
+        console.log("forest call")  
       }  else {
         this.navCtrl.push(HelpForestPage)
       }
@@ -30,10 +32,11 @@ export class AnimalTypeChoicePage {
   }
 
   home() {
+     this.AnimalService.type = "home"
      if (this.AnimalService.action == "call") {
       console.log("home call")
     }  else {
-      console.log("home help")
+      this.navCtrl.push(HelpForestPage)
     }
 
   }

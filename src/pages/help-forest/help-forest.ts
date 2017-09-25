@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AnimalService } from '../../app/animal.service';
 import { Animal } from '../../app/animal';
+import { AppService } from '../../app/app.service';
 
 /**
  * Generated class for the HelpForestPage page.
@@ -18,7 +19,8 @@ import { Animal } from '../../app/animal';
 export class HelpForestPage implements OnInit{
   animals: Animal[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService, private AppService: AppService) {
+    console.log(this.AppService.type)
   }
 
   ionViewDidLoad() {

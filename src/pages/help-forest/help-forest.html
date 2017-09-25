@@ -12,20 +12,14 @@
 
 </ion-header>
 <ion-content padding>
-    <ion-list>
-        <ion-item>
+    <ion-list *ngFor="let animal of animals">
+        <ion-item *ngIf="animal.type == AppService.type">
           <ion-thumbnail item-start>
             <img src="img/thumbnail-totoro.png" alt="thmub">
           </ion-thumbnail>
-          <h2>My Neighbor Totoro</h2>
-          <p>Hayao Miyazaki • 1988</p>
+          <h2>{{animal.id}}</h2>
+          <p>{{animal.type}} {{animal.desc}}</p>
           <button ion-button clear item-end>View</button>
         </ion-item>
       </ion-list>
-      <ul>        
-          <li *ngFor="let animal of animals">
-            <span *ngIf="animal.type == 'home'">{{animal.id}} {{animal.desc}}</span>
-          </li>
-      </ul>
-
 </ion-content>
