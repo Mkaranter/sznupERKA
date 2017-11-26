@@ -14,7 +14,7 @@ export class HomePage {
   }
 
 call() {
-  this.AppService.action = "call" //TO JEST MORDO!!
+  this.AppService.action = "call"
   this.navCtrl.push(AnimalTypeChoicePage)
 }
 
