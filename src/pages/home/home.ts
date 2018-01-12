@@ -9,18 +9,17 @@ import { AppService } from '../../app/app.service';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  
+
   constructor(public navCtrl: NavController, private AppService: AppService) {
   }
 
-call() {
-  this.AppService.action = "call"
-  this.navCtrl.push(AnimalTypeChoicePage)
-}
+  call() {
+    this.AppService.action = "call"
+    this.navCtrl.push(AnimalTypeChoicePage)
+  }
 
-help() {
-  this.AppService.action = "help"
-  this.navCtrl.push(AnimalTypeChoicePage)
-}
-
+  help() {
+    this.AppService.action = "help"
+    this.navCtrl.push(AnimalTypeChoicePage)
+  }
 }

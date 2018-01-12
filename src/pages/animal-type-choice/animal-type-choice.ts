@@ -21,24 +21,12 @@ export class AnimalTypeChoicePage {
     this.AnimalService.type = ""
   }
 
-  forest() {
-      this.AnimalService.type = "forest"
-      if (this.AnimalService.action == "call") {
-        console.log("forest call")  
-      }  else {
-        this.navCtrl.push(HelpActionPage)
-      }
-
-  }
-
-  home() {
-     this.AnimalService.type = "home"
-     if (this.AnimalService.action == "call") {
-      console.log("home call")
-    }  else {
+  chooseAnimalType(animalType: string) {
+    this.AnimalService.type = animalType
+    if (this.AnimalService.action == "call") {
+      console.log(animalType + ' call')
+    } else {
       this.navCtrl.push(HelpActionPage)
     }
-
   }
-
 }

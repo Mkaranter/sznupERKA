@@ -35,19 +35,10 @@ var AnimalTypeChoicePage = (function () {
         this.AnimalService = AnimalService;
         this.AnimalService.type = "";
     }
-    AnimalTypeChoicePage.prototype.forest = function () {
-        this.AnimalService.type = "forest";
+    AnimalTypeChoicePage.prototype.chooseAnimalType = function (animalType) {
+        this.AnimalService.type = animalType;
         if (this.AnimalService.action == "call") {
-            console.log("forest call");
-        }
-        else {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_action_help_action__["a" /* HelpActionPage */]);
-        }
-    };
-    AnimalTypeChoicePage.prototype.home = function () {
-        this.AnimalService.type = "home";
-        if (this.AnimalService.action == "call") {
-            console.log("home call");
+            console.log(animalType + ' call');
         }
         else {
             this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__help_action_help_action__["a" /* HelpActionPage */]);
@@ -58,11 +49,12 @@ var AnimalTypeChoicePage = (function () {
 AnimalTypeChoicePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-animal-type-choice',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/'<!--\n  Generated template for the AnimalTypeChoicePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AnimalTypeChoice</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h2>elooooo</h2>\n    <button ion-button color="dark" (click)="forest()">Zwierzęta Leśne</button>\n    <button ion-button color="dark" (click)="home()">Zwierzęta Domowe</button>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/,
+        selector: 'page-animal-type-choice',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/'<!--\n  Generated template for the AnimalTypeChoicePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AnimalTypeChoice</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h2>elooooo</h2>\n    <button ion-button color="dark" (click)="chooseAnimalType(\'forest\')">Zwierzęta Leśne</button>\n    <button ion-button color="dark" (click)="chooseAnimalType(\'home\')">Zwierzęta Domowe</button>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/animal-type-choice/animal-type-choice.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]) === "function" && _c || Object])
 ], AnimalTypeChoicePage);
 
+var _a, _b, _c;
 //# sourceMappingURL=animal-type-choice.js.map
 
 /***/ }),
@@ -185,9 +177,10 @@ HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-home',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header">sznupERKA</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</h2>\n    <h2>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</h2>\n    <ion-list class="check-list">\n      <ion-list-header no-lines class="check-list-header">Pierwsze kroki</ion-list-header>\n      <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>\n      <ion-item>2. Sprawdź czy jest oznakowane</ion-item>\n      <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>\n      <ion-item>4. Sprawdz czy jest ranne</ion-item>\n    </ion-list>\n    <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>\n    <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]) === "function" && _b || Object])
 ], HomePage);
 
+var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -421,9 +414,10 @@ ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-contact',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n  <button ion-button color="dark" (click)="nara()">Dark Round</button>\n</ion-content>\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/contact/contact.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
 ], ContactPage);
 
+var _a;
 //# sourceMappingURL=contact.js.map
 
 /***/ }),
