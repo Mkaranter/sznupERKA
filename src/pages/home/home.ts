@@ -13,13 +13,8 @@ export class HomePage {
   constructor(public navCtrl: NavController, private AppService: AppService) {
   }
 
-  call() {
-    this.AppService.action = "call"
-    this.navCtrl.push(AnimalTypeChoicePage)
-  }
-
-  help() {
-    this.AppService.action = "help"
+  chooseAction(actionType: string) {
+    this.AppService.action = actionType
     this.navCtrl.push(AnimalTypeChoicePage)
   }
 }

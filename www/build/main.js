@@ -163,19 +163,15 @@ var HomePage = (function () {
         this.navCtrl = navCtrl;
         this.AppService = AppService;
     }
-    HomePage.prototype.call = function () {
-        this.AppService.action = "call";
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__animal_type_choice_animal_type_choice__["a" /* AnimalTypeChoicePage */]);
-    };
-    HomePage.prototype.help = function () {
-        this.AppService.action = "help";
+    HomePage.prototype.chooseAction = function (actionType) {
+        this.AppService.action = actionType;
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__animal_type_choice_animal_type_choice__["a" /* AnimalTypeChoicePage */]);
     };
     return HomePage;
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header">sznupERKA</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</h2>\n    <h2>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</h2>\n    <ion-list class="check-list">\n      <ion-list-header no-lines class="check-list-header">Pierwsze kroki</ion-list-header>\n      <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>\n      <ion-item>2. Sprawdź czy jest oznakowane</ion-item>\n      <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>\n      <ion-item>4. Sprawdz czy jest ranne</ion-item>\n    </ion-list>\n    <button ion-button color="dark" (click)="call()">Chcę zadzwonić</button>\n    <button ion-button color="dark" (click)="help()">Chce sam udzielić pomocy</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header">sznupERKA</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>Znalazłeś potrzebujące zwierzę i nie wiesz co zrobi?</h2>\n    <h2>Zobacz jak w kilku krokach wezwać pomoc lub samemu jej udzielić.</h2>\n    <ion-list class="check-list">\n      <ion-list-header no-lines class="check-list-header">Pierwsze kroki</ion-list-header>\n      <ion-item>1. Sprawdź czy zwierzę oddycha</ion-item>\n      <ion-item>2. Sprawdź czy jest oznakowane</ion-item>\n      <ion-item>3. Sprawdź czy w poblizu nie ma gniazda</ion-item>\n      <ion-item>4. Sprawdz czy jest ranne</ion-item>\n    </ion-list>\n    <button ion-button color="dark" (click)="chooseAction(\'call\')">Chcę zadzwonić</button>\n    <button ion-button color="dark" (click)="chooseAction(\'help\')">Chce sam udzielić pomocy</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/michalkaranter/GitHub/sznupERKA/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_app_service__["a" /* AppService */]) === "function" && _b || Object])
 ], HomePage);
