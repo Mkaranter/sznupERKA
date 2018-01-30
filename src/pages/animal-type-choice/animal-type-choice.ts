@@ -18,7 +18,6 @@ import { AppService } from '../../app/app.service';
 export class AnimalTypeChoicePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AppService) {
-    this.AnimalService.type = ""
   }
 
   chooseAnimalType(animalType: string) {

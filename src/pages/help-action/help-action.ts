@@ -20,11 +20,6 @@ export class HelpActionPage implements OnInit{
   animals: Animal[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService, private AppService: AppService) {
-    console.log(this.AppService.type)
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HelpActionPage');
   }
 
   getAnimals(): void {
@@ -33,5 +28,6 @@ export class HelpActionPage implements OnInit{
 
   ngOnInit(): void {
     this.getAnimals()
+    console.log(this.AppService.type)
   }
 }
