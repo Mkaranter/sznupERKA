@@ -1,7 +1,20 @@
 import { Injectable } from '@angular/core'
+import { AppState } from './app-state';
+
 
 @Injectable()
 export class AppService {
-    public action: string;
-    public type: string;
+    constructor() {}
+
+    getAppState() {
+        return AppState
+    }
+
+    setUserAction(action): void {
+        AppState.userAction = action
+    }
+
+    setAnimalType(animalType): void {
+        AppState.animalType = animalType
+    }
 }

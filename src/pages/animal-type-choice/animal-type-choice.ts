@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HelpActionPage } from '../help-action/help-action';
 import { AppService } from '../../app/app.service';
+import { AppState } from '../../app/app-state';
+import { AnimalService } from '../../app/animal.service';
 
 /**
  * Generated class for the AnimalTypeChoicePage page.
@@ -17,13 +19,14 @@ import { AppService } from '../../app/app.service';
 })
 export class AnimalTypeChoicePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AppService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private AnimalService: AnimalService, private AppService: AppService) {
   }
 
   chooseAnimalType(animalType: string) {
-    this.AnimalService.type = animalType
-    if (this.AnimalService.action == "call") {
-      console.log(animalType + ' call')
+    var appState = this.AppService.getAppState()
+    this.AppService.setAnimalType(animalType)
+    if (appState.userAction == "call") {
+      console.log(this.AppService.getAppState())
     } else {
       this.navCtrl.push(HelpActionPage)
     }

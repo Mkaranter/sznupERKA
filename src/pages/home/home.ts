@@ -14,7 +14,7 @@ export class HomePage {
   }
 
   chooseAction(actionType: string) {
-    this.AppService.action = actionType
+    this.AppService.setUserAction(actionType)
     this.navCtrl.push(AnimalTypeChoicePage)
   }
 }

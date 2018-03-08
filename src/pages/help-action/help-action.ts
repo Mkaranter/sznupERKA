@@ -28,6 +28,6 @@ export class HelpActionPage implements OnInit{
 
   ngOnInit(): void {
     this.getAnimals()
-    console.log(this.AppService.type)
+    console.log(this.AppService.getAppState())
   }
 }
